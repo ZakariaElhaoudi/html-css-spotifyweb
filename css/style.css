@@ -1,0 +1,46 @@
+/* general rules  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* upper rules */
+
+#upper { 
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+/* left-nav rules  */
+#left-nav{
+    height: 100%;
+    width: 250px;
+    background-color: #000000;
+}
+
+/* main rules  */
+main {
+    height: 100%;
+    width: calc(100% - 250px);
+    background-color: #1d1d1d;
+}
+
+#main-header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+}
+
+
+/* footer rules  */
+
+footer{
+    background-color: #181818;
+    height: 100px;
+}
+
+/* DEBUG  */
+
+
