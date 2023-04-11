@@ -8,6 +8,11 @@
 body{
     color: white;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
 /* upper rules */
 
 #upper { 
@@ -20,49 +25,112 @@ body{
     height: 100%;
     width: 250px;
     background-color: #000000;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .logo {
-    max-width: 100%;
-    padding: 10px 0;
+    max-width: 80%;
 }
 
 .logo img {
     max-width: 100%;
+    padding: 10px 0;
 
 }
 
-nav li {
+#left-nav li {
     list-style: none;
-    line-height: 30px;
+    line-height: 2;
     vertical-align: middle;
     color: #b3b3b3;
+    font-size: 12px;
 }
+
+nav a {
+    text-decoration: none;
+    color:#b3b3b3 ;
+}
+
+
+.plus{
+    background-color: pink;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 12px;
+    margin-top: 20px;
+}
+
+
 ul img {
-    height: 30px;
+    height: 20px;
     padding-right: 10px;
     line-height: 30px;
     vertical-align: middle;
 }
-}
 
 /* main rules  */
-#container {
+
+main{
     height: 100%;
     width: calc(100% - 250px);
     background-color: #1d1d1d;
+    padding-top: 120px;
+    overflow: auto;
 }
 
+
 #main-header{
+    position: static;
     position: fixed;
     top: 0;
     left: 250px;
     height: 100px;
     width: 100%;
-    background-color:  #1d1d1d;
+    background-color: #070707;
+    z-index: 100;
 }
 
+.button-header {
+    position: absolute;
+    right: 0;
+    background-color: #070707;
+    color: white;
+    border: solid 1px #fff;
+    padding:8px 24px;
+    border-radius: 20px 20px ;
+
+}
+
+/* contenuto main  */
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.nav-bar li {
+    padding-left: 10px;
+    list-style: none;
+}
+
+/* contenitore card  */
+.container-cards {
+    display: flex;
+   
+}
+.container-cards .card {
+    width: 204px;
+    text-align: center; 
+    padding-left: 10px ;
+}
+.card img {
+    max-width: 100%;
+}
+
+.card a {
+    color: #b3b3b3 ;
+}
 
 /* footer rules  */
 
