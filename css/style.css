@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body{
+    color: white;
+}
 /* upper rules */
 
 #upper { 
@@ -17,10 +20,35 @@
     height: 100%;
     width: 250px;
     background-color: #000000;
+    padding-left: 10px;
+}
+
+.logo {
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+.logo img {
+    max-width: 100%;
+
+}
+
+nav li {
+    list-style: none;
+    line-height: 30px;
+    vertical-align: middle;
+    color: #b3b3b3;
+}
+ul img {
+    height: 30px;
+    padding-right: 10px;
+    line-height: 30px;
+    vertical-align: middle;
+}
 }
 
 /* main rules  */
-main {
+#container {
     height: 100%;
     width: calc(100% - 250px);
     background-color: #1d1d1d;
@@ -28,9 +56,11 @@ main {
 
 #main-header{
     position: fixed;
+    top: 0;
+    left: 250px;
     height: 100px;
     width: 100%;
-    background-color: aqua;
+    background-color:  #1d1d1d;
 }
 
 
