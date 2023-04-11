@@ -7,6 +7,7 @@
 
 body{
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -81,19 +82,20 @@ main{
 
 
 #main-header{
-    position: static;
+    position: relative;
     position: fixed;
     top: 0;
     left: 250px;
     height: 100px;
     width: 100%;
+    display: flex;
+    align-items: center;
     background-color: #070707;
+    opacity: 0.9;
     z-index: 100;
 }
 
 .button-header {
-    position: absolute;
-    right: 0;
     background-color: #070707;
     color: white;
     border: solid 1px #fff;
@@ -115,9 +117,11 @@ main{
 }
 
 /* contenitore card  */
+.container{
+    padding: 10px 10px ;
+}
 .container-cards {
     display: flex;
-   
 }
 .container-cards .card {
     width: 204px;
@@ -127,9 +131,16 @@ main{
 .card img {
     max-width: 100%;
 }
+.container > h2 {
+   padding-left: 10px;
+   padding: 20px;
+}
 
-.card a {
+.card a,p {
+    font-size: 13px;
     color: #b3b3b3 ;
+    line-height: 2;
+    padding-left: 10px ;
 }
 
 /* footer rules  */
