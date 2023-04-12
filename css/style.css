@@ -27,6 +27,7 @@ a {
     width: 250px;
     background-color: #000000;
     padding: 0 10px;
+    line-height: 2;
 }
 
 .logo {
@@ -45,16 +46,15 @@ a {
 
 #left-nav li {
     list-style: none;
-    line-height: 2;
     vertical-align: middle;
     color: #b3b3b3;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 nav a {
     text-decoration: none;
     color:#b3b3b3 ;
-    padding: 10px 10px;
+    padding: 10px 0;
 }
 
 
@@ -64,7 +64,6 @@ nav a {
     font-size: 30px;
     font-weight: bold;
     padding: 0 12px;
-    margin-top: 20px;
 }
 
 
@@ -76,7 +75,7 @@ ul img {
 }
 
 #nav-playlist {
-    height: calc( 100% - 300px);
+    height: calc( 100% - 370px);
     overflow: auto;
 }
 
@@ -91,7 +90,6 @@ ul img {
 }
 
 #profile {
-  
     font-size: 25px;
     color: white;
     font-weight: bold;
@@ -150,12 +148,13 @@ ul img {
     #install{
         font-size: 12px;
         padding-top : 0;
-        padding-bottom: 5px;
+        padding-bottom: 0px;
         border: none;
         text-align: center;
     }
-    #profile{
-        padding: 0;
+    #profile, #profile img {
+        font-size: 20px;
+        padding-top: 0px;
     }
 }
 
