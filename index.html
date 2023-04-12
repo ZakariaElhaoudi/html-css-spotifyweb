@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -18,27 +20,37 @@
         <!-- menu nav laterale  -->
         <nav id="left-nav">
             <div class="logo">
-                <img src="img/logo.svg" alt="">
+             <a href="#"><img src="img/logo.svg" alt=""></a>   
             </div>
             <div>
                 <ul>
                     <li>
-                        <img src="img/home.svg" alt="">
-                        <a href="#">Home</a> 
+                        <a href="#"> 
+                            <img src="img/home.svg" alt="">
+                           <span> Home</span>
+                        </a> 
                     </li>
                     <li>
-                        <img src="img/search.svg" alt="">
-                        <a href="#">Cerca</a> 
+                        <a href=""> 
+                            <img src="img/search.svg" alt="">
+                            <span>Cerca </span>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/libreria.svg" alt="">
-                       <a href="#">La tua libreria </a> 
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="">
+                             <span> La tua libreria</span>
+                        </a> 
                     </li>
                 </ul>
             </div>
+
             <h3>PLAYLIST</h3>
             
-                   <a href="#"></a> <span class="plus">+</span> Crea Playlist</a> 
+                   <a href="#"> 
+                    <span class="plus">+</span>
+                     Crea Playlist
+                    </a> 
             <nav id="nav-playlist">
                 <ul>
                     <li><a href="#">Nome Playlist</a></li>
@@ -48,11 +60,24 @@
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
+                    
                 </ul>
             </nav>
-            <div id="left-nav-footer">
-                <span>Installa app </span> 
-            </div>
+                <div id="left-nav-footer">
+                    <div id="install">
+                        <a href="#">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span>Installa app </span>
+                        </a> 
+                    </div>
+                    <div id="profile">
+                        <a href="#">
+                            <img src="img/profile.svg" alt="">
+                            <span>John Doe</span> 
+                        </a> 
+                            
+                    </div>
+                </div> 
         </nav>
 
         <!-- corpo centrale  -->
@@ -76,55 +101,92 @@
                 </ul>
             </nav>
 
-            <section class="container">
-                <h2>Recently played</h2>
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="img/metal_lifting.jpg" alt="">
-                        <h3>Heavy Metal</h3>
-                        <a href="#">Subtitle</a>
-                    </div>
-                    <div class="card">
-                        <img src="img/stranger.jpeg" alt="">
-                         <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
-                        <a href="#">Kyle Dixon & Michael Stein</a>
-                    </div>
-                    <div class="card">
-                        <img src="img/aquietplace.jpeg" alt="">
-                        <h3>A quiet place</h3>
-                        <a href="#">Subtitle</a>
-                    </div>
-                    <div class="card">
-                        <img src="img/split.jpeg" alt="">
-                        <h3>Split</h3>
-                        <a href="#">Subtitle</a>
-                    </div>
-                    <div class="card">
-                        <img src="img/cure.jpeg" alt="">
-                        <h3>A cure for wellness</h3>
-                        <a href="#">Subtitle</a> 
-                    </div>
-                    <div class="card">
-                        <img src="img/sinister.jpeg" alt="">
-                        <h3>Sinister</h3>
-                        <a href="#">Subtitle</a>
-                    </div>
-                </div>
+            <div class="container">
 
-                <h2>Creato per John Doe</h2>  
-                <p>Piu ascolti, piu accurati saranno i suggerimenti</p>
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="img/radar.jpeg" alt="">
-                        <h3>Release Radar</h3>
-                     
+                <!-- prima section 6 album  -->
+                <section>
+                    <h2>Recently played</h2>
+                    <div class="container-cards">
+                        <div class="card">
+                            <a href="#">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p> </a>
+                        </div>
+                        <div class="card">
+                             <a href="#">
+                            <img src="img/stranger.jpeg" alt="">
+                            <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                            <p>Kyle Dixon & Michael Stein</p>  </a>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                            <img src="img/aquietplace.jpeg" alt="">
+                            <h3>A quiet place</h3>
+                            <p>Subtitle</p> </a>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                            <img src="img/split.jpeg" alt="">
+                            <h3>Split</h3>
+                            <p>Subtitle</p>  </a>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                            <img src="img/cure.jpeg" alt="">
+                            <h3>A cure for wellness</h3>
+                            <p>Subtitle</p> </a> 
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                            <img src="img/sinister.jpeg" alt="">
+                            <h3>Sinister</h3>
+                            <p>Subtitle</p> </a>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="img/mixdaily.jpeg" alt="">
-                         <h3>Daily mix 1</h3>
-                    </div>
-                </div>    
-            </section>
+                </section>
+
+                <!-- seconda section con 2 album  -->
+                <section>
+
+                    <h2>Creato per John Doe</h2>  
+                    <p>Piu ascolti, piu accurati saranno i suggerimenti</p>
+                    <div class="container-cards">
+                        <div class="card"> 
+                            <a href="">
+                            <img src="img/radar.jpeg" alt="">
+                            <h3>Release Radar</h3></a>
+                        
+                        </div>
+                        <div class="card">
+                            <a href="">
+                            <img src="img/mixdaily.jpeg" alt="">
+                            <h3>Daily mix 1</h3></a>
+                        </div>
+                    </div>    
+                </section>
+
+                <!-- terza section con 2 album circolari  -->
+                <section>
+                    <h2>Artisti piu popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="container-cards">
+                        <div class="card round ">
+                            <a href="#">
+                                <img src="img/youg.jpeg" alt="">
+                                <h3>Lana Del Ray</h3>
+                            </a>
+                        </div>
+
+                        <div class="card round">
+                            <a href="#">
+                                <img src="img/einaudi.jpeg" alt="">
+                                <h3>Ludovico Einaudi</h3>
+                            </a>
+                        </div>
+                    </div>    
+                </section>
+            </div>
 
         </main>
 
@@ -132,7 +194,7 @@
 
      <!-- footer  -->
     <footer>
-
+        
     </footer>
 
 
