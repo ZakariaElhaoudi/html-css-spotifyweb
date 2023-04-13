@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +24,12 @@
              <a href="#"><img src="img/logo.svg" alt=""></a>   
             </div>
 
-            <div>
+            <div class="menu-nav">
                 <ul>
                     <li class="logo-mobile">
                         <a href="#"><img src="img/logo-small.svg" alt=""></a>   
                     </li>
-                    <li>
+                    <li class="left-nav-home">
                         <a href="#"> 
                             <img src="img/home.svg" alt="">
                            <span> Home</span>
@@ -52,10 +52,12 @@
 
             <h3>PLAYLIST</h3>
             
-            <a href="#"> 
-                <span class="plus">+</span>
-                <span>Crea Playlist</span> 
-            </a> 
+            <div class="plus-playlist">
+                <a href="#"> 
+                    <span class="plus">+</span>
+                    <span>Crea Playlist</span> 
+                </a> 
+            </div>
 
             <nav id="nav-playlist">
                 <ul>
@@ -80,10 +82,8 @@
                         </a> 
                     </div>
                     <div id="profile">
-                        <a href="#">
                             <img src="img/profile.svg" alt="">
-                            <span>John Doe</span> 
-                        </a> 
+                            <span>John Doe</span>  
                             
                     </div>
                 </div> 
@@ -101,7 +101,9 @@
 
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">IN EVIDENZA</a>
+                    <span class="nav-bar-yellow"></span>
+                    </li>
                     <li><a href="#">POPCAST</a></li>
                     <li><a href="#">CLASSIFICHE</a></li>
                     <li><a href="#">GENERI E MOOD</a></li>
