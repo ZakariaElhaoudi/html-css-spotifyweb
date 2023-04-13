@@ -256,7 +256,6 @@ main{
     font-size: 16px;
 }
 
-
 /* contenitore card  */
 .container{
     padding: 10px 10px ;
@@ -280,6 +279,7 @@ main{
     text-align: center; 
     margin: 0 10px ;
     padding-bottom: 20px;
+     cursor: pointer;
 }
 
 .card img {
@@ -295,6 +295,30 @@ main{
 .card.round img {
     border-radius: 50%;
     object-fit: contain;
+}
+
+/* parte hover album  */
+.card-img {
+    position: relative;
+    
+}
+
+.card:hover .card-img img {
+    opacity: 0.5;
+}
+
+.card-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    display: none;
+}
+
+.card:hover .card-img .card-play {
+    display: inline;
 }
 
 /* parte responsive main desktop */
@@ -320,8 +344,6 @@ main{
     }
 
 }
-
-
 
 /* footer rules  */
 
