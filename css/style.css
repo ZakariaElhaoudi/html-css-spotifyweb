@@ -302,7 +302,7 @@ footer{
 
 }
 
-.album-img{
+.col.left .album-img{
     width: 50px;
     margin-left: 10px;
 }
@@ -389,8 +389,9 @@ footer{
 }
 
 .audio-bar {
-    width: 100%;
     max-width: 100px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .audio .bar-sound {
@@ -409,9 +410,26 @@ footer{
     width: 25%;
     background-color: white;
     height: 100%;
-    
 }
 
+/* parte responsive footer  */
+
+@media screen and (max-width: 720px) {
+    .col.left {
+        gap: 0;
+    }
+    .player-conteiner .bigger {
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .audio i {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+}
 
 
 /* DEBUG  */
