@@ -384,11 +384,18 @@ footer{
     font-size: 12px;
     color: #a7a7a7;
 }
-.icon-song i {
+ .name-song p:hover {
+    text-decoration: underline;
+}
+
+.icon-song a {
     color:#a7a7a7 ;
     margin-left: 10px;
 }
 
+.icon-song  a:hover   {
+    color: white;
+}
 /* commandi brano  */
 
 .player-conteiner {
@@ -413,7 +420,7 @@ footer{
 
 .commands .bigger {
     font-size: 30px;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .commands-song {
@@ -423,6 +430,7 @@ footer{
 }
 
 .commands .bar-song {
+    cursor: pointer;
     display: block;
     width: 100%;
     max-width: 500px;
@@ -432,6 +440,7 @@ footer{
 }
 
 .bar-song .time-song {
+    position: relative;
     width: 25%;
     background-color: white;
     height: 100%;
@@ -440,6 +449,41 @@ footer{
 .commands .time-number {
     font-size: 12px;
     padding: 0 10px;
+}
+
+/* parte hover e dettagli commands  */
+.commands .bigger:hover {
+    font-size: 35px;
+    color: #fff;
+}
+.commands a {
+    color: #b3b3b3;
+}
+
+.commands a:hover{
+    color: #fff;
+}
+
+.bar-ball {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    display: none;
+  
+}
+
+.bar-song:hover .time-song .bar-ball {
+    display: inline;
+}
+
+.bar-song:hover .time-song{
+    background-color: #b3b3b3;  
+    cursor: pointer;
 }
 
 /* comandi audio  */
@@ -477,10 +521,30 @@ footer{
 }
 
 .audio .sound {
+    position: relative;
     display: block;
     width: 25%;
     background-color: white;
     height: 100%;
+}
+
+/* parte hover audio  */
+
+.bar-sound:hover .sound .bar-ball {
+    display: inline;
+}
+
+.bar-sound:hover .sound{
+    background-color: #b3b3b3;  
+    cursor: pointer;
+}
+
+.audio a {
+    color: #a7a7a7;
+}
+
+.audio a:hover {
+    color: #fff;
 }
 
 /* parte responsive footer  */
@@ -508,5 +572,3 @@ footer{
     }
 }
 
-
-/* DEBUG  */
