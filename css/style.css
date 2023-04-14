@@ -253,7 +253,7 @@ main{
 
 .nav-bar a:hover {
     color: white;
-    font-size: 16px;
+    transform: scale(1.3);
 }
 
 /* contenitore card  */
@@ -453,7 +453,7 @@ footer{
 
 /* parte hover e dettagli commands  */
 .commands .bigger:hover {
-    font-size: 35px;
+    transform: scale(1.2);
     color: #fff;
 }
 .commands a {
